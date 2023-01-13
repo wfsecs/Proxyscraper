@@ -49,7 +49,7 @@ def check_proxy(proxy):
                     f.write(f'''{proxy}
 ''')
                 else:
-                    print(f'    [{ip_info.status_code}] {L_RED} Connected with IP{L_BLACK} {ip_info.json()["ip"]}{L_RED} [-]{F_RED} Invalid proxy >{RESET} "{proxy}"')
+                    print(f'    [{ip_info.status_code}]{L_RED} Connected with IP{L_BLACK} {ip_info.json()["ip"]}{L_RED} [-]{F_RED} Invalid proxy >{RESET} "{proxy}"')
         except:
             pass
 
